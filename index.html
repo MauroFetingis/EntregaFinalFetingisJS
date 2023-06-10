@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto final</title>
+</head>
+
+<body>
+    <div class="borderContainer">
+
+        <header>
+            <h1 id="titulo" class="titulo">Buddy`s <br> Shop</h1>
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        </header>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Buscar">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>  
+
+
+        <main id="contenedor-productos">
+
+        </main>
+
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h3>Carrito</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carrito-contenedor">
+
+                </div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/9e12ebae32.js" crossorigin="anonymous"></script>
+    <script src="objetos.js"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

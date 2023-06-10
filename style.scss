@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+--principal: rgb(243, 232, 221);
+    --fondo: #ede6e2;
+    --secundario: rgb(99, 70, 38);
+    --detalles: #00d7f8;
+}
+
+.borderContainer {
+    background: var(--fondo);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+* {
+    transition: .3s linear;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: linear-gradient(rgba(181, 176, 176, 0.645), rgb(190, 185, 185))no-repeat center / cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: max-content;
+    margin-bottom: 10px;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.236)), url('img/header.png') no-repeat center / cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    box-shadow: 0px 5px 4px 3px rgba(213, 201, 201, 0.518);
+    margin-bottom: 20px;
+}
+
+select {
+    text-decoration: wavy;
+    font-size: 1.4em;
+
+}
+
+h1 {
+    background-image: linear-gradient(90deg, rgb(255, 255, 255), #f5d3d3);
+    background-color: var(--detalles);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 1px 1px 4px #fffdfd00;
+    margin-left: -117px;
+}
+
+input{
+
+    font-size: 1.5em;
+    align-content: center;
+    width: 30%;
+    border-style: ridge;
+    border-radius: 6px;
+}
+    
+
+#boton-carrito {
+    border: none;
+    color: rgb(240, 240, 240);
+    font-size: 40px;
+    background-color: unset;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+    text-shadow: 1px 1px 4px #cb5e05;
+}
+
+#boton-carrito:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: whitesmoke;
+}
+
+#boton-carrito:focus {
+    outline: none;
+}
+
+#contenedor-productos {
+    max-width: 1250px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.producto {
+
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.precioProducto {
+    font-weight: 700;
+}
+
+.boton-agregar {
+    background-color: rgb(168, 140, 107);
+    color: rgb(245, 245, 245);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border: none;
+}
+
+.boton-agregar:hover {
+    cursor: pointer;
+    background-color: rgb(115, 73, 14);
+}
+
+.boton-agregar:focus {
+    outline: none;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: rgb(245, 245, 245);
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: rgb(225, 73, 65);
+    padding-bottom: 5px;
+}
+
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: rgb(225, 158, 65);
+    border: none;
+    background-color: white;
+}
+
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+
+}
+
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+.boton-eliminar {
+    background-color: rgb(245, 245, 245);
+    color: rgb(223, 18, 18);
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+
+.boton-eliminar:focus {
+    outline: none;
+}
+
+
+
+
+
+
+//parte del search form//
+.search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.search-form.active {
+    transform: scaleY(1);
+}
+
+.search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: whitesmoke;
+    padding: 1rem;
+    text-transform: none;
+}
+
+.search-form label {
+    cursor: pointer;
+    font-size: 2.1rem;
+    margin-right: 1.5rem;
+    color: whitesmoke;
+}
+
+.search-form label:hover {
+    color: #fff;
+}
+
+.icons div {
+    color: #000000;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.icons div:hover {
+    color: #fff;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.3);
+    }
+    .fa-times:hover {
+        color: white;
+    }
+
+  //Parte del search form fin//
