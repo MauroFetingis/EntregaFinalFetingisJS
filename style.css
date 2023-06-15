@@ -228,12 +228,13 @@ p {
 }
 
 .search-form {
-  position: absolute;
-  top: 115%;
-  right: 7%;
+position: absolute;
+  text-align: center;
+  top: 33%;
+  right: 81%;
   background: #fff;
-  width: 50rem;
-  height: 5rem;
+  width: 20rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   transform: scaleY(0);
@@ -245,10 +246,11 @@ p {
 }
 
 .search-form input {
+  text-align: center;
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
-  color: whitesmoke;
+  color: rgb(12, 11, 11);
   padding: 1rem;
   text-transform: none;
 }
@@ -256,8 +258,7 @@ p {
 .search-form label {
   cursor: pointer;
   font-size: 2.1rem;
-  margin-right: 1.5rem;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
 }
 
 .search-form label:hover {
@@ -267,17 +268,14 @@ p {
 .icons div {
   color: #000000;
   cursor: pointer;
-  font-size: 2.5rem;
-  margin-left: 2rem;
+  font-size: 2.9rem;
+  margin-left: 6.9rem;
 }
 
 .icons div:hover {
   color: #fff;
 }
 
-#menu-btn {
-  display: none;
-}
 
 .fa-times {
   position: absolute;
@@ -290,4 +288,12 @@ p {
 
 .fa-times:hover {
   color: white;
-}/*# sourceMappingURL=style.css.map */
+}
+
+
+
+
+.filtro{
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

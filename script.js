@@ -31,11 +31,12 @@ stockProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
     div.innerHTML = `
+    <div class="articulo">
     <img src=${producto.img} alt= "">
     <h3>${producto.nombre}</h3>
     <p>${producto.desc}</p>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <div class="contenedorB"><button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button></div>
+    <div class="contenedorB"><button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button></div></div>
     `
     contenedorProductos.appendChild(div)
 
@@ -104,17 +105,31 @@ const actualizarCarrito = () => {
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }
 
-document.querySelector('#menu-btn').onclick = () =>{
-    searchForm.classList.remove('active');
-}
-
 let searchForm = document.querySelector('.search-form');
 
-document.querySelector('#search-btn').onclick = () =>{
+document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');
-
 }
 
-window.onscroll = () =>{
+window.onscroll = () => {
     searchForm.classList.remove('active');
 }
+
+//buscador//
+document.addEventListener("keyup", e => {
+
+    if (e.target.matches("#search-box")) {
+
+        if (e.key === "Escape") e.target.value = ""
+
+        document.querySelectorAll(".articulo").forEach(cosa => {
+
+            cosa.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                ? cosa.classList.remove("filtro")
+                : cosa.classList.add("filtro")
+        })
+
+    }
+
+
+})
