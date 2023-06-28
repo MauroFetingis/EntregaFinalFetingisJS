@@ -13,10 +13,18 @@ const stockProductos = [
     {id: 12, class: "articulo", nombre: "Cama para gatos", tipo: "gatos", cantidad: 1, desc: "Cama acolchonada para gatos con manta incluida", precio: 2200, img: './img/camaMascota.png'},
     {id: 13, class: "articulo", nombre: "Ropa para perro", tipo: "perros", cantidad: 1, desc: "Ropa abrigada de invierno para perros", precio: 1000, img: './img/ropaP.jpg'},
     {id: 15, class: "articulo", nombre: "Champu para animales", tipo: "general", cantidad: 1, desc: "Champú antipulgas para animales", precio: 1000, img: './img/champu.png'},
-    {id: 16, class: "articulo", nombre: "Peine para animales", tipo: "general", cantidad: 1, desc: "Penine con cerdas suaves para animales", precio: 700, img: './img/peine.png'},
+    {id: 16, class: "articulo", nombre: "Peine para animales", tipo: "general", cantidad: 1, desc: "Peine con cerdas suaves para animales", precio: 700, img: './img/peine.png'},
     
 ]
+//algo nuevo//
 
+
+
+
+
+
+
+//termina algo nuevo//
 
 const contenedorProductos = document.getElementById('contenedor-productos')
 

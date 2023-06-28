@@ -228,13 +228,12 @@ p {
 }
 
 .search-form {
-position: absolute;
-  text-align: center;
-  top: 33%;
-  right: 81%;
+  position: absolute;
+  top: 115%;
+  right: 7%;
   background: #fff;
-  width: 20rem;
-  height: 2.5rem;
+  width: 50rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   transform: scaleY(0);
@@ -246,11 +245,10 @@ position: absolute;
 }
 
 .search-form input {
-  text-align: center;
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
-  color: rgb(12, 11, 11);
+  color: whitesmoke;
   padding: 1rem;
   text-transform: none;
 }
@@ -258,7 +256,8 @@ position: absolute;
 .search-form label {
   cursor: pointer;
   font-size: 2.1rem;
-  color: rgb(0, 0, 0);
+  margin-right: 1.5rem;
+  color: whitesmoke;
 }
 
 .search-form label:hover {
@@ -268,14 +267,17 @@ position: absolute;
 .icons div {
   color: #000000;
   cursor: pointer;
-  font-size: 2.9rem;
-  margin-left: 6.9rem;
+  font-size: 2.5rem;
+  margin-left: 2rem;
 }
 
 .icons div:hover {
   color: #fff;
 }
 
+#menu-btn {
+  display: none;
+}
 
 .fa-times {
   position: absolute;
@@ -290,10 +292,6 @@ position: absolute;
   color: white;
 }
 
-
-
-
-.filtro{
+.filtro {
   display: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
