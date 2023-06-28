@@ -229,11 +229,8 @@ p {
 
 .search-form {
   position: absolute;
-  top: 115%;
-  right: 7%;
   background: #fff;
   width: 50rem;
-  height: 5rem;
   display: flex;
   align-items: center;
   transform: scaleY(0);
@@ -248,7 +245,7 @@ p {
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
-  color: whitesmoke;
+  color: rgb(12, 12, 12);
   padding: 1rem;
   text-transform: none;
 }
@@ -294,4 +291,23 @@ p {
 
 .filtro {
   display: none;
+}
+
+.mapa {
+  background-color: #131313;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.mapa h2 {
+  font-weight: bold;
+  color: rgb(231, 222, 222);
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }/*# sourceMappingURL=style.css.map */
