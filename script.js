@@ -21,19 +21,23 @@
 
 let stockProductos = []
 
-fetch("./products.json")
+fetch('./products.json')
 .then(response => response.json())
-.then(data => (
+.then(data => {
     stockProductos = data;
     cargarProd(stockProductos);
-))
-
-
-
-
-function cargarProd(){
-
 }
+)
+
+
+
+// const containerProd = document.getElementsByClassName('container-productos');
+// function cargarProd(){
+// stockProductos.forEach(producto =>{
+
+
+// })
+// }
 
 //termina algo nuevo//
 
@@ -64,29 +68,31 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
 })
 
+function cargarProd(){
 
-stockProductos.forEach((producto) => {
-    const div = document.createElement('div')
-    div.classList.add('producto')
-    div.innerHTML = `
-    <div class="articulo">
-    <img src=${producto.img} alt= "">
-    <h3>${producto.nombre}</h3>
-    <p>${producto.desc}</p>
-    <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <div class="contenedorB"><button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button></div></div>
-    `
-    contenedorProductos.appendChild(div)
-
-
-    const boton = document.getElementById(`agregar${producto.id}`)
-
-    boton.addEventListener('click', () => {
-
+    stockProductos.forEach((producto) => {
+        const div = document.createElement('div')
+        div.classList.add('producto')
+        div.innerHTML = `
+        <div class="articulo">
+        <img src=${producto.img} alt= "">
+        <h3>${producto.nombre}</h3>
+        <p>${producto.desc}</p>
+        <p class="precioProducto">Precio:$ ${producto.precio}</p>
+        <div class="contenedorB"><button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button></div></div>
+        `
+        contenedorProductos.appendChild(div)
+        
+        
+        const boton = document.getElementById(`agregar${producto.id}`)
+        
+        boton.addEventListener('click', () => {
+            
         agregarAlCarrito(producto.id)
-    
+        
     })
 })
+}
 
 
 const agregarAlCarrito = (prodId) => {
@@ -171,3 +177,4 @@ document.addEventListener("keyup", e => {
 
 
 })
+cargarProd()
