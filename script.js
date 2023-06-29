@@ -1,25 +1,15 @@
-// const stockProductos = [
-//     {id: 1, class: "articulo", nombre: "Comida para perro grande", cantidad: 1, desc: "Comida balanceada tamaño grande", precio: 1200, img:"./img/comidaPG.jpg"},
-//     {id: 2, class: "articulo", nombre: "Comida para perro pequeña", cantidad: 1, desc: "Comida balanceada tamaño pequeña", precio: 1100, img: "./img/comidaPC.jpg"},
-//     {id: 3, class: "articulo", nombre: "Comida para gato grande", cantidad: 1, desc: "Comida balanceada tamaño grande", precio: 1200, img: "./img/comidaG.jpg"},
-//     {id: 4, class: "articulo", nombre: "Comida para gato pequeña",cantidad: 1, desc: "Comida balanceada tamaño pequeña", precio: 1000, img: "./img/comidaG.jpg"},
-//     {id: 5, class: "articulo", nombre: "Correa para perro", cantidad: 1, desc: "Correa reajustable para perros", precio: 1200, img: "./img/correa.jpg"},
-//     {id: 6, class: "articulo", nombre: "Premio para mascotas", cantidad: 1, desc: "Un bocadillo ideal para tu mascota", precio: 900, img: "./img/premios.jpg"},
-//     {id: 7, class: "articulo", nombre: "Arena para gato", cantidad: 1, desc: "Arena hipoalergenica para gatos", precio: 500, img: "./img/arenaGato.png"},
-//     {id: 8, class: "articulo", nombre: "Collar para gato", cantidad: 1, desc: "Collar reajustable para gatos", precio: 500, img: "./img/collarG.png"},
-//     {id: 9, class: "articulo", nombre: "Juguete para perro",cantidad: 1, desc: "Juguete duradero para perros en variedad de colores", precio: 200, img: "./img/JugueteP.png"},
-//     {id: 10, class: "articulo", nombre: "Juguete para gato",cantidad: 1, desc: "Juguete super esponjoso para gatos con ruidos ", precio: 200, img: "./img/jugueteG.jpg"},
-//     {id: 11, class: "articulo", nombre: "Cama para perros", cantidad: 1,desc: "Cama acolchonada para interior o exterior", precio: 2500, img: "./img/camaMascota.png"},
-//     {id: 12, class: "articulo", nombre: "Cama para gatos", cantidad: 1, desc: "Cama acolchonada para gatos con manta incluida", precio: 2200, img: "./img/camaMascota.png"},
-//     {id: 13, class: "articulo", nombre: "Ropa para perro", cantidad: 1, desc: "Ropa abrigada de invierno para perros", precio: 1000, img: "./img/ropaP.jpg"},
-//     {id: 15, class: "articulo", nombre: "Champu para animales", cantidad: 1, desc: "Champú antipulgas para animales", precio: 1000, img: "./img/champu.png"},
-//     {id: 16, class: "articulo", nombre: "Peine para animales", cantidad: 1, desc: "Peine con cerdas suaves para animales", precio: 700, img: "./img/peine.png"},
-    
-// ]
 
-// algo nuevo//
+
+const contenedorProductos = document.getElementById('container-productos')
+const contenedorCarrito = document.getElementById('carrito-contenedor')
+const botonVaciar = document.getElementById('vaciar-carrito')
+const contadorCarrito = document.getElementById('contadorCarrito')
+const cantidad = document.getElementById('cantidad')
+const precioTotal = document.getElementById('precioTotal')
+const cantidadTotal = document.getElementById('cantidadTotal')
 
 let stockProductos = []
+let carrito = []
 
 fetch('./products.json')
 .then(response => response.json())
@@ -27,34 +17,7 @@ fetch('./products.json')
     stockProductos = data;
     cargarProd(stockProductos);
 }
-)
-
-
-
-// const containerProd = document.getElementsByClassName('container-productos');
-// function cargarProd(){
-// stockProductos.forEach(producto =>{
-
-
-// })
-// }
-
-//termina algo nuevo//
-
-const contenedorProductos = document.getElementById('container-productos')
-
-const contenedorCarrito = document.getElementById('carrito-contenedor')
-
-const botonVaciar = document.getElementById('vaciar-carrito')
-
-const contadorCarrito = document.getElementById('contadorCarrito')
-
-
-const cantidad = document.getElementById('cantidad')
-const precioTotal = document.getElementById('precioTotal')
-const cantidadTotal = document.getElementById('cantidadTotal')
-
-let carrito = []
+);
 
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('carrito')){
@@ -63,7 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-botonVaciar.addEventListener('click', () => {
+botonVaciar.addEventListener('click', () => {Toastify({
+    text: "Has vaciado tu carrito :D",
+    duration: 3000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+        fontSize: "1.5em", 
+      background: "linear-gradient(to right, #223399, #3390cf)",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
     carrito.length = 0
     actualizarCarrito()
 })
@@ -177,4 +154,38 @@ document.addEventListener("keyup", e => {
 
 
 })
+
+
+
+//interactuar//
+// button.onclick = function interactuar (e){
+//     Toastify({
+//         text: "This is a toast",
+//         duration: 3000,
+//         destination: "https://github.com/apvarun/toastify-js",
+//         newWindow: true,
+//         close: true,
+//         gravity: "top", // `top` or `bottom`
+//         position: "left", // `left`, `center` or `right`
+//         stopOnFocus: true, // Prevents dismissing of toast on hover
+//         style: {
+//           background: "linear-gradient(to right, #00b09b, #96c93d)",
+//         },
+//         onClick: function(){} // Callback after click
+//       }).showToast();
+//       const botonClass = e.currentTarget.id;
+//       if()
+// }
+
+
+
+
+
+
+
+
+
+
+
+//finaliza interactuar//
 cargarProd()
