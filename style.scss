@@ -100,7 +100,7 @@ input{
     outline: none;
 }
 
-#contenedor-productos {
+#container-productos {
     max-width: 1250px;
     margin: 60px auto;
     display: flex;
@@ -176,6 +176,8 @@ p {
 }
 
 .modal-carrito h3 {
+    display: flex;
+    justify-content: center;
     color: rgb(225, 73, 65);
     padding-bottom: 5px;
 }

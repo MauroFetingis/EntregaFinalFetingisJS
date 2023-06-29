@@ -1,0 +1,17 @@
+[
+    {"id": 1, "class": "articulo", "nobre": "comida para perro grande", "cantidad": 1, "desc": "comida balanceada tamaño grande", "precio": 1200, "img":"./img/comidaPG.jpg"},
+    {"id": 2, "class": "articulo", "nobre": "comida para perro pequeña", "cantidad": 1, "desc": "comida balanceada tamaño pequeña", "precio": 1100, "img": "./img/comidaPC.jpg"},
+    {"id": 3, "class": "articulo", "nobre": "comida para gato grande", "cantidad": 1, "desc": "comida balanceada tamaño grande", "precio": 1200, "img": "./img/comidaG.jpg"},
+    {"id": 4, "class": "articulo", "nobre": "comida para gato pequeña","cantidad": 1, "desc": "comida balanceada tamaño pequeña", "precio": 1000, "img": "./img/comidaG.jpg"},
+    {"id": 5, "class": "articulo", "nobre": "Correa para perro", "cantidad": 1, "desc": "Correa reajustable para perros", "precio": 1200, "img": "./img/correa.jpg"},
+    {"id": 6, "class": "articulo", "nobre": "Premio para mascotas", "cantidad": 1, "desc": "Un bocadillo ideal para tu mascota", "precio": 900, "img": "./img/premios.jpg"},
+    {"id": 7, "class": "articulo", "nobre": "Arena para gato", "cantidad": 1, "desc": "Arena hipoalergenica para gatos", "precio": 500, "img": "./img/arenaGato.png"},
+    {"id": 8, "class": "articulo", "nobre": "Collar para gato", "cantidad": 1, "desc": "Collar reajustable para gatos", "precio": 500, "img": "./img/collarG.png"},
+    {"id": 9, "class": "articulo", "nobre": "Juguete para perro","cantidad": 1, "desc": "Juguete duradero para perros en variedad de colores", "precio": 200, "img": "./img/JugueteP.png"},
+    {"id": 10, "class": "articulo", "nobre": "Juguete para gato","cantidad": 1, "desc": "Juguete super esponjoso para gatos con ruidos ", "precio": 200, "img": "./img/jugueteG.jpg"},
+    {"id": 11, "class": "articulo", "nobre": "Cama para perros", "cantidad": 1,"desc": "Cama acolchonada para interior o exterior", "precio": 2500, "img": "./img/camaMascota.png"},
+    {"id": 12, "class": "articulo", "nobre": "Cama para gatos", "cantidad": 1, "desc": "Cama acolchonada para gatos con manta incluida", "precio": 2200, "img": "./img/camaMascota.png"},
+    {"id": 13, "class": "articulo", "nobre": "Ropa para perro", "cantidad": 1, "desc": "Ropa abrigada de invierno para perros", "precio": 1000, "img": "./img/ropaP.jpg"},
+    {"id": 15, "class": "articulo", "nobre": "Champu para animales", "cantidad": 1, "desc": "Champú antipulgas para animales", "precio": 1000, "img": "./img/champu.png"},
+    {"id": 16, "class": "articulo", "nobre": "Peine para animales", "cantidad": 1, "desc": "Peine con cerdas suaves para animales", "precio": 700, "img": "./img/peine.png"}   
+]
