@@ -1,8 +1,8 @@
 [
-    {"id": 1, "class": "articulo", "nombre": "comida para perro grande", "cantidad": 1, "desc": "comida balanceada tamaño grande", "precio": 1200, "img":"./img/comidaPG.jpg"},
-    {"id": 2, "class": "articulo", "nombre": "comida para perro pequeña", "cantidad": 1, "desc": "comida balanceada tamaño pequeña", "precio": 1100, "img": "./img/comidaPC.jpg"},
-    {"id": 3, "class": "articulo", "nombre": "comida para gato grande", "cantidad": 1, "desc": "comida balanceada tamaño grande", "precio": 1200, "img": "./img/comidaG.jpg"},
-    {"id": 4, "class": "articulo", "nombre": "comida para gato pequeña","cantidad": 1, "desc": "comida balanceada tamaño pequeña", "precio": 1000, "img": "./img/comidaG.jpg"},
+    {"id": 1, "class": "articulo", "nombre": "Comida para perro grande", "cantidad": 1, "desc": "Comida balanceada tamaño grande", "precio": 1200, "img":"./img/comidaPG.jpg"},
+    {"id": 2, "class": "articulo", "nombre": "Comida para perro pequeña", "cantidad": 1, "desc": "Comida balanceada tamaño pequeña", "precio": 1100, "img": "./img/comidaPC.jpg"},
+    {"id": 3, "class": "articulo", "nombre": "Comida para gato grande", "cantidad": 1, "desc": "Comida balanceada tamaño grande", "precio": 1200, "img": "./img/comidaG.jpg"},
+    {"id": 4, "class": "articulo", "nombre": "Comida para gato pequeña","cantidad": 1, "desc": "Comida balanceada tamaño pequeña", "precio": 1000, "img": "./img/comidaG.jpg"},
     {"id": 5, "class": "articulo", "nombre": "Correa para perro", "cantidad": 1, "desc": "Correa reajustable para perros", "precio": 1200, "img": "./img/correa.jpg"},
     {"id": 6, "class": "articulo", "nombre": "Premio para mascotas", "cantidad": 1, "desc": "Un bocadillo ideal para tu mascota", "precio": 900, "img": "./img/premios.jpg"},
     {"id": 7, "class": "articulo", "nombre": "Arena para gato", "cantidad": 1, "desc": "Arena hipoalergenica para gatos", "precio": 500, "img": "./img/arenaGato.png"},

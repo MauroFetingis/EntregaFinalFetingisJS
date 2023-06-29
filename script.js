@@ -72,7 +72,20 @@ function cargarProd(){
 }
 
 
-const agregarAlCarrito = (prodId) => {
+const agregarAlCarrito = (prodId) => {Toastify({
+    text: "Producto agregado ",
+    duration: 3000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "left", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
 
 
     const existe = carrito.some (prod => prod.id === prodId) 
@@ -92,6 +105,20 @@ const agregarAlCarrito = (prodId) => {
 }
 
 const eliminarDelCarrito = (prodId) => {
+    Toastify({
+    text: "Articulo eliminado",
+    duration: 3000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: true,
+    gravity: "bottom", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to left, #00b09b, #3dc996)",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
     const item = carrito.find((prod) => prod.id === prodId)
 
     const indice = carrito.indexOf(item) 
@@ -156,36 +183,4 @@ document.addEventListener("keyup", e => {
 })
 
 
-
-//interactuar//
-// button.onclick = function interactuar (e){
-//     Toastify({
-//         text: "This is a toast",
-//         duration: 3000,
-//         destination: "https://github.com/apvarun/toastify-js",
-//         newWindow: true,
-//         close: true,
-//         gravity: "top", // `top` or `bottom`
-//         position: "left", // `left`, `center` or `right`
-//         stopOnFocus: true, // Prevents dismissing of toast on hover
-//         style: {
-//           background: "linear-gradient(to right, #00b09b, #96c93d)",
-//         },
-//         onClick: function(){} // Callback after click
-//       }).showToast();
-//       const botonClass = e.currentTarget.id;
-//       if()
-// }
-
-
-
-
-
-
-
-
-
-
-
-//finaliza interactuar//
 cargarProd()
